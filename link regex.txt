@@ -1,8 +1,8 @@
-Find links with:
-\[(?:img\[[^\[\]]+\])?\[(?:[^\[\]]+(?:\||->))?([^\[\]]+?)(?:<-[^\[\]]+)?\](?:\[[^\[\]]+\])?\]
-
 Find links to REPLACE with (remember to escape REPLACE if necessary):
 (\[(?:img\[[^\[\]]+\])?\[(?:[^\[\]]+(?:\||->))?)(REPLACE)((?:<-[^\[\]]+)?\](?:\[[^\[\]]+\])?\])
 
 Replace links to REPLACE in VSCode with:
 $1REPLACE$3
+
+Find ALL links with:
+(\[(?:img\[[^\[\]]+\])?\[(?:[^\[\]]+(?:\||->))?)([^\[\]]+?)((?:<-[^\[\]]+)?\](?:\[[^\[\]]+\])?\])
